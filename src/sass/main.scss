@@ -1,2 +1,17 @@
-@import 'layout/body';
-@import 'typography/fonts';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/general';
+@import 'base/slider';
+@import 'base/pop-up';
+
+@import 'layout/wrapper';
+@import 'layout/header';
+@import 'layout/not-only';
+@import 'layout/about';
+@import 'layout/pets';
+@import 'layout/help';
+@import 'layout/donation';
+@import 'layout/footer';

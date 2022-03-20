@@ -1,0 +1,78 @@
+.footer__wrapper{
+  padding: 40px 40px 0;
+  background:url("../images/bg-noise.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 58px;
+  @include media-midle{
+    padding: 30px 30px 0;
+    justify-content: center;
+    row-gap: 65px;
+  }
+  @include media-mobile{
+    padding: 30px 10px 0;
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+.info__wrapper{
+  margin-top: 16px; 
+  &--contacts{
+    flex-basis: 278.3px;
+    >*:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+  &--location{
+    flex-basis: 302px;
+    >*:not(:last-child){
+      margin-bottom: 34px;    
+      @include media-mobile{
+        margin-bottom: 40px;  
+      }
+    }
+    @include media-mobile{
+      >*:not(:first-child){
+        text-align: start;  } 
+    }
+  }
+  h3{
+    color: $color-light;
+    @include media-mobile{
+      padding: 0 5px;
+    }
+  }
+  @include media-midle{
+    margin: 0;
+  }
+}
+
+.info__contacts{
+  display: inline-block;
+  padding: 5px 0px 4px 60px;
+  a{
+    font: inherit;
+    color: $color-primary;
+  }
+  position: relative;
+
+  &--mail{
+      @include pseudo-ico(40px,32px,"email");
+
+  }
+  &--phone{
+    @include pseudo-ico(40px,32px,"phone");
+  }
+  &--location{
+    padding: 0px 0px 0px 42px;
+    @include pseudo-ico(22px,32px,"marker");
+  }
+}
+
+.footer__image{
+  @include media-mobile{
+    max-width: 260px;
+  }
+}

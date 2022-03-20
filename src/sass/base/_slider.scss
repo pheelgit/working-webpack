@@ -1,0 +1,61 @@
+.slider{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media-midle{
+    flex-wrap: wrap;
+  } 
+  @include media-mobile{
+    column-gap: 80px;
+    row-gap: 20px;
+  } 
+}
+.slider__content{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 90px;
+  row-gap: 20px;
+  @include media-midle{
+    column-gap: 40px;
+  } 
+}
+.slider__card{
+  flex-basis: 270px;
+  text-align: center;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  >*{
+    margin-bottom: 30px;
+  }
+}
+.slider__btn{
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: 1px solid $color-primary;
+  cursor: pointer;
+  &--prev{
+    background: center no-repeat url("../images/arrow-left.svg");
+  }
+  &--next{
+    background: center no-repeat url("../images/arrow-right.svg");
+  }
+  @include media-mobile{
+    order: 1;
+  } 
+}
+
+.slider--our-pets{
+  outline:1px solid red;
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // gap: 40px 30px;
+
+  .slider__btn{
+    order:1;
+  }
+}

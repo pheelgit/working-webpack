@@ -1,0 +1,30 @@
+html{
+  scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button{
+  color: $color-dark-3xl;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+  background-color: $color-primary;
+  padding: 15px 45px;
+  border-radius: 100px;
+  border: none;   
+  cursor: pointer;
+  &:hover{
+    background-color: $color-primary-light;
+  }
+  &--light{
+    background-color: $color-light-s;
+    padding: 13px 43px;
+    outline: 2px solid $color-primary;
+    &:hover{
+      outline: 2px solid $color-primary-light;
+    }
+  }
+}
+
+

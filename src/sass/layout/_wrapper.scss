@@ -1,0 +1,23 @@
+.wrapper{
+  margin: auto;
+  max-width: 1280px;
+  padding: 80px 40px 100px;
+  @include media-midle{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include media-mobile{
+    padding: 42px 10px;
+  }
+}
+
+
+.start-wrapper{
+  padding: 60px 0px 0px;
+  margin: auto;
+  max-width: 1280px;
+  background:url("../images/bg-noise.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  @include media-midle{
+    padding-top: 30px;
+  }
+}

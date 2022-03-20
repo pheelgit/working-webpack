@@ -1,0 +1,54 @@
+.donation{
+
+}
+
+
+
+.donation__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 31px;
+  flex-wrap: wrap-reverse;
+  row-gap: 60px;
+  @include media-mobile{
+    row-gap: 42px;
+  }  
+}
+.donation__img{
+  display: block;
+  align-self: center;
+  width: 100%;
+  max-width: 505px;
+  @include media-mobile{
+    max-width: 262px;
+  }  
+}
+.donation__content{
+  flex-basis: 380px;
+  >*:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .card{
+    display: inline-block;
+    border-radius: 9px;
+    padding: 13px 15px 13px 60px;
+    background:left 15px center no-repeat $color-primary url("./../images/credit-card.svg");
+    @include media-mobile{
+      font-size: 15px;
+      line-height: 16.5px;
+    } 
+  }
+  @include media-mobile{
+    text-align: center;
+    padding: 0 9px;
+    h5{
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: normal;
+    }
+    .p-light{
+      text-align: justify;
+    }
+  } 
+}

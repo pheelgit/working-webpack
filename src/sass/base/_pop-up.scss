@@ -1,0 +1,84 @@
+.pop-up{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pop-up--hide{
+  display: none;
+}
+.pop-up__content{
+  align-content: stretch;
+  position: relative;
+  max-width: 900px;
+  display: flex;
+  cursor: auto;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 9px;
+  z-index: 4;
+  img{
+    display: block;
+    width: 500px;
+  }
+}
+.pop-up__description{
+  margin-top: 50px;
+  margin-right: 20px;
+  flex-basis: 350px;
+  color:black;
+  text-align: start;
+  >*:not(:last-child){
+    margin-bottom: 40px;
+    color: inherit;
+  }
+}
+.pop-up__title{
+  h3{
+    display: inline-block;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+}
+.pop-up__list{
+  list-style: disc inside;
+  li{
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+    &::marker{
+      color: $color-primary;
+    }
+    line-height: 18px;
+    h5{
+      color: inherit;
+      display: inline-block;
+      vertical-align: bottom;
+      span{
+        font-weight: bold ;
+      }
+    }
+  }
+}
+
+.pop-up__close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  transform: translate(100%,-100%);
+  border-radius: 100%;
+  border: 2px solid $color-primary;
+  background: center no-repeat url("../images/icon-close.svg");
+  &:hover{
+    cursor: pointer;
+    background-color: $color-primary;
+  }
+}

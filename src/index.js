@@ -1,6 +1,7 @@
-import './style.css'
 import './sass/main.scss'
 
-console.log('qweqwe')
+import slider from "./assets/slider.js"
 
-console.log('qweqwe')
+slider()
+
+// setTimeout(popUp,500)
